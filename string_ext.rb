@@ -2,7 +2,7 @@ class StringExt
 
   def initialize(first, second)
     @concated = first + second
-    @substracted = first.to_s.sub(second, '')
+    @substracted = first.gsub(second, '')
   end
 
   def concat()
